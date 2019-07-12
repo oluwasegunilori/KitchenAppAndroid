@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.changeme.kitchenapp">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <meta-data
+        android:name="co.paystack.android.PublicKey"
+        android:value="pk_test_f952541b30036c2eab3e32ae769bc70bd1aeeb4d"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icondone"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+
+        </activity>
+        <activity
+            android:name=".Signup"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme" />
+        <activity
+            android:name=".SignIn"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme" />
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme" />
+        <activity
+            android:name=".FoodList"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme1" />
+        <activity
+            android:name=".Activity_Verify"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme" />
+        <activity
+            android:name=".FoodDetails"
+            android:screenOrientation="portrait"
+            android:theme="@style/ibkgold" />
+        <activity
+            android:name=".Cart"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme" />
+        <activity
+            android:name=".Orders"
+            android:screenOrientation="portrait"
+            android:theme="@style/ibkgold" />
+        <activity
+            android:name=".OrderStatus"
+            android:screenOrientation="portrait"
+            android:theme="@style/ibkgold" />
+        <activity
+            android:name=".OrderDetails"
+            android:screenOrientation="portrait"
+            android:theme="@style/ibkgold" />
+        <activity
+            android:name=".Help"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".Service.MyFireBaseIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".Service.MyFirebaseMessaging">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".AboutApp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PayBill"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Showcomment" />
+        <activity
+            android:name=".SearchActivity"
+            android:theme="@style/SplashTheme1" />
+        <activity
+            android:name=".FavouriteActivity"
+            android:theme="@style/SplashTheme1" />
+        <activity
+            android:name=".OrderingProcess"
+            android:theme="@style/SplashTheme2"></activity>
+        <activity android:name=".Splash"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+        </activity>
+    </application>
+
+</manifest>

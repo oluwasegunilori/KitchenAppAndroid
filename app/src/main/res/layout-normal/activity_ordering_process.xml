@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderingProcess">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/white"
+
+        android:padding="0dp"
+        app:titleTextColor="@android:color/white"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/headers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="0dp">
+
+            <ImageView
+                android:id="@+id/goback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:src="@drawable/ic_arrow_left_black_48dp" />
+
+            <TextView
+                android:id="@+id/checkcart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:text="@string/ords"
+                android:textColor="@color/colorPrimary"
+
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/gohome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:paddingRight="10dp"
+                android:src="@drawable/ic_home_black_48dp" />
+
+
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cont"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+        android:layout_marginBottom="60dp"
+        android:padding="10dp"
+        app:cardElevation="20dp"
+
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/order_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:text="@string/ordertype"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"/>
+
+    <RadioGroup
+        android:id="@+id/grouping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:checkedButton="@+id/pay_on"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <RadioButton
+            android:id="@+id/pay_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorPrimary"
+            android:text="Delivery"
+            android:textColor="@android:color/black"
+            android:theme="@style/RadioButtonStyle"/>
+        <RadioButton
+            android:id="@+id/pick_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="10dp"
+            android:buttonTint="@color/colorPrimary"
+            android:text="Pick Up in 30 mins"
+            android:textColor="@android:color/black"
+            android:theme="@style/RadioButtonStyle"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/pay_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/grouping"
+        android:padding="4dp"
+        android:text="@string/payopt"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"/>
+
+    <RadioGroup
+        android:id="@+id/grouping2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pay_option"
+        android:checkedButton="@+id/pay_on_cash"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <RadioButton
+            android:id="@+id/pay_delivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorPrimary"
+            android:text="Pay on Delivery"
+            android:textColor="@android:color/black"
+            android:theme="@style/RadioButtonStyle"/>
+        <RadioButton
+            android:id="@+id/pay_on_cash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="10dp"
+            android:buttonTint="@color/colorPrimary"
+            android:text="Pay Now"
+            android:textColor="@android:color/black"
+            android:theme="@style/RadioButtonStyle"/>
+
+    </RadioGroup>
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/grouping2"
+        android:focusableInTouchMode="true"
+        >
+        <TextView
+            android:id="@+id/addresser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:padding="4dp"
+            android:text="@string/payadd"
+            android:textColor="@color/colorPrimary"/>
+        <TextView
+            android:id="@+id/getLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+            android:padding="4dp"
+            android:paddingRight="2dp"
+            android:text="@string/locate"
+            android:textColor="@color/colorPrimary"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/editAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addresser"
+            android:cursorVisible="true"
+            android:drawableStart="@drawable/ic_location_on_black_24dp"
+            android:drawableLeft="@drawable/ic_location_on_black_24dp"
+            android:focusedByDefault="false"
+            android:hint="Address"
+            android:inputType="textMultiLine"
+            android:maxLines="10"
+             android:text=""
+            android:textColor="@android:color/black"
+
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="14sp"
+            app:met_baseColor="@color/colorPrimary"
+            app:met_floatingLabel="highlight"
+            app:met_iconLeft="@drawable/ic_location_on_black_24dp"
+            app:met_primaryColor="@color/colorPrimary"
+            app:met_singleLineEllipsis="true"
+            app:met_textColor="@android:color/primary_text_light" />
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editAddress"
+
+            android:padding="4dp"
+            android:paddingRight="2dp"
+            android:text="@string/message"
+            android:textColor="@color/colorPrimary"/>
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/editMessage"
+            android:layout_width="match_parent"
+
+
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/message"
+            android:drawableStart="@drawable/ic_message_black_24dp"
+            android:drawableLeft="@drawable/ic_message_black_24dp"
+            android:focusedByDefault="false"
+            android:hint="Message"
+            android:inputType="textMultiLine"
+            android:maxLines="150"
+
+             android:text=""
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="14sp"
+            app:met_baseColor="@color/colorPrimary"
+            app:met_floatingLabel="highlight"
+            app:met_iconLeft="@drawable/ic_message_black_24dp"
+            app:met_primaryColor="@color/colorPrimary"
+            app:met_singleLineEllipsis="true"
+            app:met_textColor="@android:color/primary_text_light" />
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+
+        </ScrollView>
+
+
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/total_due"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/continues"
+
+        android:padding="4dp"
+        android:paddingRight="2dp"
+        android:text="..."
+        android:textColor="@color/colorPrimary"/>
+
+
+
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/continues"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_weight=".8"
+
+        android:background="@color/colorPrimary"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:shadowColor="@android:color/black"
+        android:text="Continue"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:cornerRadius="4dp"
+        app:fButtonColor="@color/btnActive"
+        app:shadowEnabled="true"
+        app:shadowHeight="5dp"
+
+
+        />
+
+    <include
+        layout="@layout/order_completed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar" />
+
+
+
+</RelativeLayout>

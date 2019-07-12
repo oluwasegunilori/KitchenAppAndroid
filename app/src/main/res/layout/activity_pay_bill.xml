@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.changeme.kitchenapp.PayBill">
+    
+    
+    <android.support.v7.widget.CardView
+        android:id="@+id/crt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="30dp"
+        android:padding="20dp"
+        app:cardElevation="30dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/amounttoPay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:drawableStart="@drawable/ic_person_black_24dp"
+
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:editable="false"
+
+                android:hint="Enter your email address"
+                android:inputType="number"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/btnActive"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:met_baseColor="@android:color/black"
+                app:met_floatingLabel="highlight"
+                app:met_iconLeft="@drawable/ic_person_black_24dp"
+                app:met_maxCharacters="11"
+                app:met_primaryColor="@color/colorPrimary"
+                app:met_singleLineEllipsis="true"
+                app:met_textColor="#37474f"
+
+                />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/emailaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/amounttoPay"
+            android:layout_marginTop="12dp"
+            android:drawableStart="@drawable/ic_person_black_24dp"
+
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:hint="Enter your email address"
+
+            android:inputType="number"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/btnActive"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:met_baseColor="@android:color/black"
+            app:met_floatingLabel="highlight"
+            app:met_iconLeft="@drawable/ic_person_black_24dp"
+            app:met_maxCharacters="11"
+            app:met_primaryColor="@color/colorPrimary"
+            app:met_singleLineEllipsis="true"
+            app:met_textColor="#37474f"
+
+            />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/cardnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailaddress"
+            android:drawableStart="@drawable/ic_lock_black_24dp"
+
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:hint="Enter your card number"
+            android:inputType="number"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/btnActive"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:met_baseColor="@android:color/black"
+            app:met_floatingLabel="highlight"
+            app:met_iconLeft="@drawable/ic_lock_black_24dp"
+            app:met_maxCharacters="100"
+            app:met_primaryColor="@color/colorPrimary"
+
+
+            app:met_singleLineEllipsis="true"
+            app:met_textColor="@color/transparentBlack"
+            />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/expirydate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardnumber"
+                android:drawableStart="@drawable/ic_lock_black_24dp"
+
+                android:drawableLeft="@drawable/ic_lock_black_24dp"
+                android:hint="Expiry date"
+                android:inputType="number"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="@android:color/black"
+
+                android:textColorHint="@color/btnActive"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:met_baseColor="@android:color/black"
+                app:met_floatingLabel="highlight"
+                app:met_iconLeft="@drawable/ic_lock_black_24dp"
+                app:met_maxCharacters="2"
+                app:met_primaryColor="@color/colorPrimary"
+
+
+                app:met_singleLineEllipsis="true"
+                app:met_textColor="@color/transparentBlack"
+                />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/cvv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardnumber"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/expirydate"
+
+                android:drawableStart="@drawable/ic_lock_black_24dp"
+                android:drawableLeft="@drawable/ic_lock_black_24dp"
+                android:hint="Expiry date"
+                android:inputType="number"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/btnActive"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:met_baseColor="@android:color/black"
+                app:met_floatingLabel="highlight"
+                app:met_iconLeft="@drawable/ic_lock_black_24dp"
+                app:met_maxCharacters="3"
+                app:met_primaryColor="@color/colorPrimary"
+
+
+                app:met_singleLineEllipsis="true"
+                app:met_textColor="@color/transparentBlack"
+                />
+
+
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+    
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/crt">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progress_load_pays"
+            style="@android:style/Widget.Holo.ProgressBar.Large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="70dp"
+            android:tooltipText="loading....."
+            />
+
+        <WebView
+            android:id="@+id/webSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+
+        </WebView>
+
+
+
+    </RelativeLayout>
+
+
+</ScrollView>
+
+</RelativeLayout>

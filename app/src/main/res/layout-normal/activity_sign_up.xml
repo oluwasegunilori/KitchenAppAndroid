@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.changeme.kitchenapp.Signup">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+
+        >
+
+
+
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/reee"/>
+
+
+    </RelativeLayout>
+
+   <ScrollView
+       android:id="@+id/scrl"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_centerInParent="true">
+    <LinearLayout
+        android:id="@+id/in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/Editphoneup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_phone_black_24dp"
+
+            android:drawableLeft="@drawable/ic_phone_black_24dp"
+            android:editable="false"
+            android:hint="Phone Number"
+            android:inputType="none"
+
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:met_baseColor="@android:color/black"
+            app:met_floatingLabel="highlight"
+            app:met_iconLeft="@drawable/ic_phone_black_24dp"
+            app:met_maxCharacters="11"
+            app:met_primaryColor="@android:color/black"
+            app:met_singleLineEllipsis="true"
+            app:met_textColor="@android:color/black"
+            />
+
+
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/Editnameup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_person_black_24dp"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:hint="Name"
+
+            android:inputType="text"
+            android:text=""
+            android:textColor="@android:color/black"
+
+            android:textColorHint="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:met_baseColor="@android:color/black"
+            app:met_floatingLabel="highlight"
+            app:met_iconLeft="@drawable/ic_person_black_24dp"
+            app:met_maxCharacters="15"
+            app:met_primaryColor="@android:color/black"
+            app:met_singleLineEllipsis="true"
+            app:met_textColor="@android:color/black"
+
+            />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/EditPasswordup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_lock_black_24dp"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+
+
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:met_baseColor="@android:color/black"
+            app:met_floatingLabel="highlight"
+            app:met_iconLeft="@drawable/ic_lock_black_24dp"
+            app:met_maxCharacters="15"
+            app:met_primaryColor="@android:color/black"
+            app:met_singleLineEllipsis="true"
+            app:met_textColor="@android:color/black"
+
+            />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/Editsecurecode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:drawableStart="@drawable/ic_lock_black_24dp"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:hint="Alternative password"
+            android:inputType="text"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:met_baseColor="@android:color/black"
+            app:met_floatingLabel="highlight"
+            app:met_iconLeft="@drawable/ic_lock_black_24dp"
+            app:met_maxCharacters="20"
+
+
+            app:met_primaryColor="@android:color/black"
+            app:met_singleLineEllipsis="true"
+            app:met_textColor="@android:color/black"
+
+            />
+
+
+       <LinearLayout
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="15dp"
+           android:gravity="center"
+           android:orientation="horizontal"
+           android:weightSum="1.0">
+
+
+       <info.hoang8f.widget.FButton
+            android:id="@+id/btnsignup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginRight="8dp"
+        android:layout_weight=".7"
+            android:shadowColor="@android:color/black"
+            android:text="Sign    Up"
+            android:textColor="@android:color/white"
+            android:textSize="23sp"
+            app:cornerRadius="4dp"
+            app:fButtonColor="@color/colorPrimary"
+            app:shadowEnabled="true"
+            app:shadowHeight="5dp">
+
+        </info.hoang8f.widget.FButton>
+
+       </LinearLayout>
+
+
+    </LinearLayout>
+   </ScrollView>
+
+        />
+
+
+    <include layout="@layout/error"/>
+
+</RelativeLayout>

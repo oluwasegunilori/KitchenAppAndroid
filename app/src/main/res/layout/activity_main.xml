@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainact"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.changeme.kitchenapp.MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello,"
+            android:textColor="#ffff"
+            android:textSize="7sp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imagemain"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+
+            android:src="@drawable/reee"
+
+            />
+        <TextView
+            android:id="@+id/txt"
+            style="@style/AndroidImageSlider_Attractive_Rect_Blue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:shadowColor="@color/colorBackground"
+            android:shadowDx="1.0"
+            android:shadowDy="1.0"
+            android:shadowRadius="1.0"
+            android:text="@string/Details"
+            android:textColor="#ffff"
+            android:textSize="7sp"
+            android:textStyle="bold"
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btnSignupm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:shadowColor="@android:color/black"
+            android:text="Sign Up"
+            android:textColor="#ffff"
+            android:textSize="7sp"
+            app:cornerRadius="4dp"
+            app:fButtonColor="@color/colorPrimary"
+            app:shadowEnabled="true"
+            app:shadowHeight="5dp" />
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btnSignIn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:shadowColor="@android:color/black"
+            android:text="Sign In"
+            android:textColor="#ffff"
+            android:textSize="7sp"
+            app:cornerRadius="4dp"
+            app:fButtonColor="@color/colorPrimary"
+        app:shadowEnabled="true"
+        app:shadowHeight="5dp"
+
+
+        />
+    </LinearLayout>
+
+    <include layout="@layout/error"/>
+
+    <LinearLayout
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparentBlack"
+        android:orientation="vertical"
+        android:visibility="gone"
+
+
+
+        >
+
+        <ProgressBar
+            android:id="@+id/linprogress"
+            style="@android:style/Widget.Holo.ProgressBar.Large"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tooltipText="loading"
+
+            />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:background="#E0E0E0"
+
+       tools:context="com.example.changeme.kitchenapp.SignIn">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        >
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/imagesignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:backgroundTint="@android:color/white"
+
+            >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+
+                android:src="@drawable/reee"
+
+                />
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/in"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1.0">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:background="@android:color/white"
+            android:backgroundTint="@android:color/white"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/Editphone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Phone Number"
+
+                    android:inputType="phone"
+                    android:padding="5dp"
+                    android:text="07035019382"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/btnActive"
+                    android:textSize="3sp"
+                    android:textStyle="bold"
+                    app:met_baseColor="@android:color/black"
+                    app:met_floatingLabel="highlight"
+                    app:met_maxCharacters="11"
+                    app:met_primaryColor="@color/colorPrimary"
+                    app:met_singleLineEllipsis="true"
+                    app:met_textColor="#37474f"
+
+                    />
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/EditPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Editphone"
+                    android:hint="Password"
+
+                    android:inputType="textPassword"
+                    android:padding="5dp"
+                    android:text="1234"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/btnActive"
+                    android:textSize="3sp"
+                    android:textStyle="bold"
+                    app:met_baseColor="@android:color/black"
+                    app:met_floatingLabel="highlight"
+                    app:met_maxCharacters="100"
+                    app:met_primaryColor="@color/colorPrimary"
+                    app:met_singleLineEllipsis="true"
+                    app:met_textColor="@color/transparentBlack"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/contains"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/EditPassword"
+                    android:background="#E0E0E0"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    >
+                    <com.rey.material.widget.CheckBox
+                        android:id = "@+id/chbRemember"
+                        style = "@style/Material.Drawable.CheckBox"
+                        android:layout_width="0dp"
+                        android:layout_height = "wrap_content"
+
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text = "Remember Me"
+                        android:textColor = "@color/colorPrimaryDark"
+                        android:textSize="2sp"
+                        app:cbd_strokeColor = "@android:color/black"
+                        app:cbd_tickColor = "@android:color/black"
+
+
+                        />
+
+                    <TextView
+                        android:id="@+id/forgotpassword"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="@string/forgot_pwd"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="2sp"
+
+                        />
+
+
+
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/newUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+
+            android:text="Don't Have an Account?"
+            android:textColor="@android:color/black"
+            android:textSize="2sp"  />
+
+        <TextView
+            android:id="@+id/newUserClick"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/newUser"
+
+            android:text="@string/your_string"
+            android:textColor="@color/colorPrimary"
+            android:textSize="2sp" />
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/in"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1.0">
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btnsignin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:layout_marginLeft="8dp"
+
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="8dp"
+        android:layout_weight=".7"
+            android:background="@color/colorPrimary"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:shadowColor="@android:color/black"
+            android:text="Sign    In"
+            android:textColor="@android:color/white"
+            android:textSize="2sp"
+            app:cornerRadius="4dp"
+            app:fButtonColor="@color/btnActive"
+            app:shadowEnabled="true"
+            app:shadowHeight="5dp"
+
+
+
+
+            />
+    </LinearLayout>
+
+
+    <include layout="@layout/error"/>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparentBlack"
+        android:orientation="vertical"
+        android:visibility="gone"
+
+
+
+        >
+
+        <ProgressBar
+            style="@android:style/Widget.Holo.ProgressBar.Large"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tooltipText="loading"
+
+
+            />
+
+    </LinearLayout>
+</RelativeLayout>

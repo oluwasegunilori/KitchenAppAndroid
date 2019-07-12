@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Surname = "
+                android:textColor="#fff"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:id="@+id/textnamehere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/textView"
+                android:layout_toRightOf="@+id/textView"
+                android:text="Surname Show Here"
+                android:textColor="#fff"
+                android:textSize="20dp" />
+            <TextView
+                android:id="@+id/textSex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="20dp"
+                android:text="Firstname = "
+                android:textColor="#fff"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:id="@+id/textsexhere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textSex"
+                android:layout_alignBottom="@+id/textSex"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/textSex"
+
+                android:layout_toRightOf="@+id/textSex"
+                android:text="Firstname Show Here"
+                android:textColor="#fff"
+                android:textSize="20dp"/>
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/textdept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textSex"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="20dp"
+                android:text="Phone no = "
+                android:textColor="#fff"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:id="@+id/textdepthere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textdept"
+                android:layout_alignBottom="@+id/textSex"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/textdept"
+
+                android:layout_toRightOf="@+id/textdept"
+                android:text="Phone Show Here"
+                android:textColor="#fff"
+                android:textSize="20dp"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textdept"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="20dp"
+                android:text="Sex = "
+                android:textColor="#fff"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textphonehere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView3"
+                android:layout_alignBottom="@+id/textView3"
+                android:layout_toEndOf="@+id/textView3"
+                android:layout_toRightOf="@+id/textView3"
+                android:text="Sex Show Here"
+                android:textColor="#fff"
+                android:textSize="20dp" />
+
+
+
+
+            <TextView
+                android:id="@+id/textaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView3"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="20dp"
+                android:text="Address = "
+                android:textColor="#fff"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/textaddresshere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textaddress"
+                android:layout_alignBottom="@+id/textView3"
+                android:layout_toEndOf="@+id/textaddress"
+                android:layout_toRightOf="@+id/textaddress"
+                android:text="Address Show Here "
+                android:textColor="#fff"
+                android:textSize="20dp" />
+
+
+
+            <TextView
+                android:id="@+id/textservice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textaddress"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="40dp"
+                android:text="Service = "
+                android:textColor="#fff"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:id="@+id/textservicehere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textservice"
+                android:layout_alignBottom="@+id/textaddress"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/textservice"
+
+                android:layout_toRightOf="@+id/textservice"
+                android:text="Service Show Here"
+                android:textColor="#fff"
+                android:textSize="20dp"/>
+
+
+
+
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/textemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textservice"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="20dp"
+                android:text="Email = "
+                android:textColor="#fff"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:id="@+id/textemailhere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textemail"
+                android:layout_alignBottom="@+id/textaddress"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/textemail"
+
+                android:layout_toRightOf="@+id/textemail"
+                android:text="Email Show Here"
+                android:textColor="#fff"
+                android:textSize="20dp"/>
+
+
+
+
+
+
+
+
+            <Button
+                android:id="@+id/buttonUpdate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textemail"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="34dp"
+                android:text="Edit This Record" />
+
+            <Button
+                android:id="@+id/buttonDelete"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttonUpdate"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp"
+                android:text="Delete This Record" />
+
+            <ImageButton
+                android:id="@+id/yui"
+
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/buttonDelete"
+                android:layout_marginLeft="50dp"
+                android:layout_weight="0.05"
+                android:clickable="true"
+
+                android:text="call"
+
+                android:textColor="#e5584f"
+                android:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/uu"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/buttonDelete"
+
+                android:layout_marginLeft="30dp"
+
+                android:layout_toRightOf="@+id/yui"
+                android:clickable="true"/>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</LinearLayout>
